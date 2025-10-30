@@ -162,6 +162,10 @@
                 document.body.appendChild(div)
                  window.EJS_oldCores = true
               window.EJS_gameID = 1;
+Object.defineProperty(window, "EJS_netplayServer", {
+  value: "http://127.0.0.1:3000",
+  writable: false
+});
 
 
               window.EJS_netplayServer = 'http://127.0.0.1:3000';
