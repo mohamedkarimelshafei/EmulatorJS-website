@@ -162,7 +162,8 @@
                 document.body.appendChild(div)
                  window.EJS_oldCores = true
               window.EJS_gameID = Array.from(input.files[0].name)
-  .reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
+  .reduce((acc, ch) => acc + ch.charCodeAt(0), 0) % 100000;
+
 
               window.EJS_netplayServer = 'http://127.0.0.1:3000';
 window.EJS_netplayICEServers = [
