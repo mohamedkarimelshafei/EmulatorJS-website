@@ -160,7 +160,9 @@
                 box.remove()
                 div.appendChild(sub)
                 document.body.appendChild(div)
-window.EJS_disableDefaultNetplayServer = true;
+window.EJS_turnServers = [
+  { urls: "turn:openrelay.metered.ca:3478", username: "openrelay", credential: "openrelay" }
+];
                  window.EJS_oldCores = true
               window.EJS_gameID = 1;
 Object.defineProperty(window, "window.EJS_netplayUrl", {
